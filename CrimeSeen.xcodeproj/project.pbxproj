@@ -20,6 +20,7 @@
 		643B5950284B50E100873442 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643B594F284B50E100873442 /* CameraViewController.swift */; };
 		643B5952284B528C00873442 /* ExploreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643B5951284B528C00873442 /* ExploreViewController.swift */; };
 		643B5954284B52BB00873442 /* NotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643B5953284B52BB00873442 /* NotificationsViewController.swift */; };
+		6458CD64284B6203009412B2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6458CD63284B6203009412B2 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		643B594F284B50E100873442 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		643B5951284B528C00873442 /* ExploreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreViewController.swift; sourceTree = "<group>"; };
 		643B5953284B52BB00873442 /* NotificationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsViewController.swift; sourceTree = "<group>"; };
+		6458CD63284B6203009412B2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E0D94C57BFC18411D09B62E8 /* Pods-CrimeSeen.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CrimeSeen.release.xcconfig"; path = "Target Support Files/Pods-CrimeSeen/Pods-CrimeSeen.release.xcconfig"; sourceTree = "<group>"; };
 		EB612EF0763B76B0D4502485 /* Pods-CrimeSeen.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CrimeSeen.debug.xcconfig"; path = "Target Support Files/Pods-CrimeSeen/Pods-CrimeSeen.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -113,6 +115,7 @@
 		643B5944284B3A2100873442 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				6458CD63284B6203009412B2 /* GoogleService-Info.plist */,
 				643B592E284B37F300873442 /* AppDelegate.swift */,
 				643B5930284B37F300873442 /* SceneDelegate.swift */,
 			);
@@ -162,7 +165,6 @@
 				EB612EF0763B76B0D4502485 /* Pods-CrimeSeen.debug.xcconfig */,
 				E0D94C57BFC18411D09B62E8 /* Pods-CrimeSeen.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -227,6 +229,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				643B593B284B37F400873442 /* LaunchScreen.storyboard in Resources */,
+				6458CD64284B6203009412B2 /* GoogleService-Info.plist in Resources */,
 				643B5938284B37F400873442 /* Assets.xcassets in Resources */,
 				643B5936284B37F300873442 /* Main.storyboard in Resources */,
 			);
