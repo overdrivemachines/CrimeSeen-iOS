@@ -21,6 +21,7 @@
 		643B5952284B528C00873442 /* ExploreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643B5951284B528C00873442 /* ExploreViewController.swift */; };
 		643B5954284B52BB00873442 /* NotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643B5953284B52BB00873442 /* NotificationsViewController.swift */; };
 		6458CD64284B6203009412B2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6458CD63284B6203009412B2 /* GoogleService-Info.plist */; };
+		6458CD66284B67A9009412B2 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6458CD65284B67A9009412B2 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		643B5951284B528C00873442 /* ExploreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreViewController.swift; sourceTree = "<group>"; };
 		643B5953284B52BB00873442 /* NotificationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsViewController.swift; sourceTree = "<group>"; };
 		6458CD63284B6203009412B2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		6458CD65284B67A9009412B2 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		E0D94C57BFC18411D09B62E8 /* Pods-CrimeSeen.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CrimeSeen.release.xcconfig"; path = "Target Support Files/Pods-CrimeSeen/Pods-CrimeSeen.release.xcconfig"; sourceTree = "<group>"; };
 		EB612EF0763B76B0D4502485 /* Pods-CrimeSeen.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CrimeSeen.debug.xcconfig"; path = "Target Support Files/Pods-CrimeSeen/Pods-CrimeSeen.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -118,6 +120,7 @@
 				6458CD63284B6203009412B2 /* GoogleService-Info.plist */,
 				643B592E284B37F300873442 /* AppDelegate.swift */,
 				643B5930284B37F300873442 /* SceneDelegate.swift */,
+				6458CD65284B67A9009412B2 /* Extensions.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -289,6 +292,7 @@
 				643B5948284B4F1E00873442 /* EditProfileViewController.swift in Sources */,
 				643B5933284B37F300873442 /* HomeViewController.swift in Sources */,
 				643B592F284B37F300873442 /* AppDelegate.swift in Sources */,
+				6458CD66284B67A9009412B2 /* Extensions.swift in Sources */,
 				643B5952284B528C00873442 /* ExploreViewController.swift in Sources */,
 				643B5950284B50E100873442 /* CameraViewController.swift in Sources */,
 				643B594A284B4F5A00873442 /* LoginViewController.swift in Sources */,
