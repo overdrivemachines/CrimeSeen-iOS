@@ -68,6 +68,7 @@
 		643B592D284B37F300873442 /* CrimeSeen */ = {
 			isa = PBXGroup;
 			children = (
+				643B593C284B37F400873442 /* Info.plist */,
 				643B5945284B3A7500873442 /* Models */,
 				643B5943284B399600873442 /* Controllers */,
 				643B5942284B398E00873442 /* Views */,
@@ -98,7 +99,6 @@
 			isa = PBXGroup;
 			children = (
 				643B592E284B37F300873442 /* AppDelegate.swift */,
-				643B593C284B37F400873442 /* Info.plist */,
 				643B5930284B37F300873442 /* SceneDelegate.swift */,
 			);
 			path = Resources;
