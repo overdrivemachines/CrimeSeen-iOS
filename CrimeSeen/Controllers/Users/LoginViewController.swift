@@ -7,6 +7,7 @@
 
 import UIKit
 import SafariServices
+//import FirebaseAuth
 
 class LoginViewController: UIViewController {
     
@@ -53,7 +54,7 @@ class LoginViewController: UIViewController {
         button.setTitle("Log In", for: .normal)
         button.layer.masksToBounds = true
         button.layer.cornerRadius = Constants.cornerRadius
-        button.backgroundColor = .systemBlue
+        button.backgroundColor = .darkText
         button.setTitleColor(.white, for: .normal)
         return button
     }()
@@ -161,17 +162,38 @@ class LoginViewController: UIViewController {
         usernameEmailField.resignFirstResponder()
         passwordField.resignFirstResponder()
         
-        // Check username email
-        guard let usernameEmail = usernameEmailField.text, !usernameEmail.isEmpty else {
-            return
-        }
-        
-        // Check password
-        guard let password = passwordField.text, !password.isEmpty, password.count > 8 else {
+        // Check if username email and password exist
+        guard let usernameEmail = usernameEmailField.text, !usernameEmail.isEmpty,  let password = passwordField.text, !password.isEmpty, password.count >= 8 else {
             return
         }
         
         // TODO: Login Functionality
+        var username: String?
+        var email: String?
+        
+        if usernameEmail.contains("@"), usernameEmail.contains(".") {
+            // email
+            email = usernameEmail
+        }
+        else {
+            // username
+            username = usernameEmail
+        }
+        AuthManager.shared.loginUser(username: username, email: email, password: password) { success in
+            DispatchQueue.main.async {
+                if success {
+                    // user logged in
+                    self.dismiss(animated: true, completion: nil)
+                }
+                else {
+                    // error occured
+                    let alert = UIAlertController(title: "Log In Error", message: "We were unable to log you in", preferredStyle: .alert)
+                    alert.addAction(UIAlertAction(title: "Dismiss", style: .cancel, handler: nil))
+                    self.present(alert, animated: true)
+                }
+            }
+        }
+                                     
     }
     @objc private func didTapTermsButton() {
         // View Terms in Safari View
