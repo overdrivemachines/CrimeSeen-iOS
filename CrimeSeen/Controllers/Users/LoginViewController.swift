@@ -174,10 +174,12 @@ class LoginViewController: UIViewController {
         if usernameEmail.contains("@"), usernameEmail.contains(".") {
             // email
             email = usernameEmail
+            print("Log In Email: \(email as Optional)")
         }
         else {
             // username
             username = usernameEmail
+            print("Log In Username: \(username as Optional)")
         }
         AuthManager.shared.loginUser(username: username, email: email, password: password) { success in
             DispatchQueue.main.async {
